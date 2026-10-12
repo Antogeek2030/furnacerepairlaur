@@ -1,0 +1,27 @@
+---
+import Layout from '../../layouts/Layout.astro';
+const phone = '+13015550199';
+const phoneDisplay = '(301) 555-0199';
+---
+<Layout title="Pilot Light Problems | Furnace Repair Laurel MD" description="Pilot light won't stay lit in Laurel, MD? Thermocouple and pilot assembly repair for older gas furnaces.">
+  <section class="page-hero">
+    <div class="container">
+      <h1>Pilot Light Issues in Laurel, MD</h1>
+      <p>A pilot that won't stay lit is usually a thermocouple or pilot orifice problem — often a quick, affordable fix.</p>
+      <p style="margin-top:1.25rem"><a href={`tel:${phone}`} class="btn btn-primary">Fix It Today — {phoneDisplay}</a></p>
+    </div>
+  </section>
+  <section class="content-section">
+    <div class="container prose">
+      <h2>Why Pilots Fail</h2>
+      <ul>
+        <li>Worn thermocouple</li>
+        <li>Dirty pilot orifice</li>
+        <li>Draft or venting problems</li>
+        <li>Failing gas valve</li>
+      </ul>
+      <p>Modern furnaces use hot surface igniters instead of standing pilots. We service both styles.</p>
+      <p><a href={`tel:${phone}`} class="btn btn-primary">Schedule Pilot Service</a></p>
+    </div>
+  </section>
+</Layout>

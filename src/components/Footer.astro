@@ -1,0 +1,42 @@
+---
+const phone = '+13015550199';
+const phoneDisplay = '(301) 555-0199';
+const year = new Date().getFullYear();
+---
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h4>Furnace Repair Laurel MD</h4>
+        <p>Licensed furnace repair, replacement, and maintenance serving Laurel and Prince George's County. Same-day service, upfront pricing, written guarantee.</p>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <p><a href="/services/emergency-furnace-repair/">Emergency Repair</a></p>
+        <p><a href="/services/gas-furnace-repair/">Gas Furnace Repair</a></p>
+        <p><a href="/services/electric-furnace-repair/">Electric Furnace Repair</a></p>
+        <p><a href="/services/furnace-installation/">Installation</a></p>
+        <p><a href="/services/furnace-maintenance/">Maintenance</a></p>
+        <p><a href="/services/heat-pump-repair/">Heat Pump Repair</a></p>
+      </div>
+      <div>
+        <h4>Common Problems</h4>
+        <p><a href="/problems/no-heat/">No Heat</a></p>
+        <p><a href="/problems/strange-noises/">Strange Noises</a></p>
+        <p><a href="/problems/pilot-light-issues/">Pilot Issues</a></p>
+        <p><a href="/problems/uneven-heating/">Uneven Heating</a></p>
+        <p><a href="/problems/frequent-cycling/">Frequent Cycling</a></p>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p><a href={`tel:${phone}`}>{phoneDisplay}</a></p>
+        <p>14305 Cherry Lane Ct #116<br />Laurel, MD 20707</p>
+        <p>Open 24 / 7 for emergencies</p>
+        <p style="margin-top:0.75rem"><a href="/service-areas/">Service Areas</a> · <a href="/about/">About</a> · <a href="/contact/">Contact</a> · <a href="/blog/">Blog</a></p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© {year} Furnace Repair Laurel MD. All rights reserved. | <a href="/privacy/">Privacy Policy</a></p>
+    </div>
+  </div>
+</footer>

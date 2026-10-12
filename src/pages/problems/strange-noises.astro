@@ -1,0 +1,27 @@
+---
+import Layout from '../../layouts/Layout.astro';
+const phone = '+13015550199';
+const phoneDisplay = '(301) 555-0199';
+---
+<Layout title="Furnace Making Strange Noises | Laurel MD Repair" description="Banging, squealing, or rattling furnace in Laurel, MD? Diagnose and fix noise issues before they become major repairs.">
+  <section class="page-hero">
+    <div class="container">
+      <h1>Furnace Making Strange Noises?</h1>
+      <p>Unusual sounds are early warning signs. Address them before a minor issue becomes a major failure.</p>
+      <p style="margin-top:1.25rem"><a href={`tel:${phone}`} class="btn btn-primary">Get It Checked — {phoneDisplay}</a></p>
+    </div>
+  </section>
+  <section class="content-section">
+    <div class="container prose">
+      <h2>What Different Noises Mean</h2>
+      <ul>
+        <li><strong>Banging or booming</strong> — delayed ignition or expanding ductwork</li>
+        <li><strong>Squealing or screeching</strong> — blower belt or motor bearing wear</li>
+        <li><strong>Rattling</strong> — loose panels, screws, or debris in the blower</li>
+        <li><strong>Clicking</strong> — relay or ignition sequence issues</li>
+      </ul>
+      <p>We identify the source quickly and recommend the most cost-effective repair.</p>
+      <p><a href={`tel:${phone}`} class="btn btn-primary">Schedule Diagnosis</a></p>
+    </div>
+  </section>
+</Layout>

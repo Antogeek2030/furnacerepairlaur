@@ -1,0 +1,33 @@
+---
+import Layout from '../layouts/Layout.astro';
+const phone = '+13015550199';
+const phoneDisplay = '(301) 555-0199';
+---
+<Layout title="Service Areas | Furnace Repair Laurel MD" description="Furnace repair serving Laurel, Beltsville, College Park, Greenbelt, Bowie, Columbia and Prince George's County, MD.">
+  <section class="page-hero">
+    <div class="container">
+      <h1>Service Areas</h1>
+      <p>Same-day furnace repair across Laurel and surrounding communities in Maryland.</p>
+    </div>
+  </section>
+  <section class="content-section">
+    <div class="container prose">
+      <h2>Proudly Serving</h2>
+      <p>We provide licensed furnace repair, maintenance, and installation from our base in Laurel, MD.</p>
+      <ul>
+        <li>Laurel</li>
+        <li>Beltsville</li>
+        <li>College Park</li>
+        <li>Greenbelt</li>
+        <li>Bowie</li>
+        <li>Columbia</li>
+        <li>Hyattsville</li>
+        <li>Riverdale</li>
+        <li>Seabrook</li>
+        <li>and surrounding Prince George's County communities</li>
+      </ul>
+      <p>Not sure if we cover your neighborhood? Call us — if you're nearby, we'll get there.</p>
+      <p><a href={`tel:${phone}`} class="btn btn-primary">Call {phoneDisplay}</a></p>
+    </div>
+  </section>
+</Layout>

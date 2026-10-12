@@ -1,0 +1,29 @@
+---
+import Layout from '../../layouts/Layout.astro';
+const phone = '+13015550199';
+const phoneDisplay = '(301) 555-0199';
+---
+<Layout title="No Heat? Furnace Repair Laurel MD | Same-Day Fix" description="No heat in Laurel, MD? Same-day furnace diagnosis and repair. Licensed technicians for gas and electric systems.">
+  <section class="page-hero">
+    <div class="container">
+      <h1>No Heat in Laurel, MD?</h1>
+      <p>Complete loss of heat is an emergency in Maryland winters. We diagnose and restore heat the same day in most cases.</p>
+      <p style="margin-top:1.25rem"><a href={`tel:${phone}`} class="btn btn-primary">Call Now — {phoneDisplay}</a></p>
+    </div>
+  </section>
+  <section class="content-section">
+    <div class="container prose">
+      <h2>Common Causes of No Heat</h2>
+      <ul>
+        <li>Failed hot surface igniter or pilot assembly</li>
+        <li>Dirty or failed flame sensor</li>
+        <li>Tripped limit switch or safety lockout</li>
+        <li>Thermostat failure or low batteries</li>
+        <li>Blower motor or capacitor failure</li>
+        <li>Gas supply interruption</li>
+      </ul>
+      <p>Our technicians arrive prepared with common parts and diagnostic tools to restore heat on the first visit whenever possible.</p>
+      <p><a href={`tel:${phone}`} class="btn btn-primary">Request Same-Day Service</a></p>
+    </div>
+  </section>
+</Layout>

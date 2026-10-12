@@ -1,0 +1,27 @@
+---
+import Layout from '../../layouts/Layout.astro';
+const phone = '+13015550199';
+const phoneDisplay = '(301) 555-0199';
+---
+<Layout title="Uneven Heating | Furnace Repair Laurel MD" description="Hot and cold rooms in Laurel, MD? Diagnose duct issues, blower problems, and furnace capacity for even comfort.">
+  <section class="page-hero">
+    <div class="container">
+      <h1>Uneven Heating in Your Laurel Home?</h1>
+      <p>Hot and cold spots mean the system isn't distributing heat properly. We find and fix the root cause.</p>
+      <p style="margin-top:1.25rem"><a href={`tel:${phone}`} class="btn btn-primary">Get a Diagnosis — {phoneDisplay}</a></p>
+    </div>
+  </section>
+  <section class="content-section">
+    <div class="container prose">
+      <h2>Common Causes</h2>
+      <ul>
+        <li>Restricted or leaky ductwork</li>
+        <li>Failing blower motor or wrong speed settings</li>
+        <li>Closed or blocked vents</li>
+        <li>Undersized or aging furnace</li>
+        <li>Thermostat placement issues</li>
+      </ul>
+      <p><a href={`tel:${phone}`} class="btn btn-primary">Schedule Service</a></p>
+    </div>
+  </section>
+</Layout>

@@ -1,0 +1,73 @@
+---
+const phone = '+13015550199';
+const phoneDisplay = '(301) 555-0199';
+---
+<header class="header">
+  <div class="container header-inner">
+    <a href="/" class="logo">
+      <span class="logo-icon">🔥</span>
+      <span>Furnace Repair Laurel</span>
+    </a>
+    <nav class="nav">
+      <a href="/">Home</a>
+      <div class="dropdown">
+        <a href="/#services" class="dropdown-toggle">Services ▾</a>
+        <div class="dropdown-menu">
+          <a href="/services/emergency-furnace-repair/">Emergency Repair</a>
+          <a href="/services/gas-furnace-repair/">Gas Furnace Repair</a>
+          <a href="/services/electric-furnace-repair/">Electric Furnace Repair</a>
+          <a href="/services/furnace-installation/">Installation</a>
+          <a href="/services/furnace-maintenance/">Maintenance</a>
+          <a href="/services/heat-pump-repair/">Heat Pump Repair</a>
+        </div>
+      </div>
+      <a href="/service-areas/">Service Areas</a>
+      <a href="/blog/">Blog</a>
+      <a href="/about/">About</a>
+      <a href="/contact/">Contact</a>
+    </nav>
+    <a href={`tel:${phone}`} class="header-phone">📞 {phoneDisplay}</a>
+    <button class="mobile-toggle" aria-label="Open menu" id="mobile-toggle">☰</button>
+  </div>
+</header>
+<div class="mobile-nav" id="mobile-nav">
+  <button class="close-btn" id="mobile-close" aria-label="Close menu">×</button>
+  <a href="/">Home</a>
+  <a href="/services/emergency-furnace-repair/">Emergency Repair</a>
+  <a href="/services/gas-furnace-repair/">Gas Furnace Repair</a>
+  <a href="/services/electric-furnace-repair/">Electric Furnace Repair</a>
+  <a href="/services/furnace-installation/">Installation</a>
+  <a href="/services/furnace-maintenance/">Maintenance</a>
+  <a href="/services/heat-pump-repair/">Heat Pump Repair</a>
+  <a href="/service-areas/">Service Areas</a>
+  <a href="/blog/">Blog</a>
+  <a href="/about/">About</a>
+  <a href="/contact/">Contact</a>
+  <a href={`tel:${phone}`} style="margin-top:1rem;color:var(--accent);font-weight:700;">📞 {phoneDisplay}</a>
+</div>
+<script>
+  const toggle = document.getElementById('mobile-toggle');
+  const mobileNav = document.getElementById('mobile-nav');
+  const closeBtn = document.getElementById('mobile-close');
+  toggle?.addEventListener('click', () => mobileNav?.classList.add('open'));
+  closeBtn?.addEventListener('click', () => mobileNav?.classList.remove('open'));
+  mobileNav?.querySelectorAll('a').forEach(a => {
+    a.addEventListener('click', () => mobileNav?.classList.remove('open'));
+  });
+
+  document.querySelectorAll('.dropdown-toggle').forEach(toggle => {
+    toggle.addEventListener('click', (e) => {
+      e.preventDefault();
+      const parent = toggle.closest('.dropdown');
+      const isOpen = parent?.classList.contains('open');
+      document.querySelectorAll('.dropdown').forEach(d => d.classList.remove('open'));
+      if (!isOpen) parent?.classList.add('open');
+    });
+  });
+
+  document.addEventListener('click', (e) => {
+    if (!(e.target as Element).closest('.dropdown')) {
+      document.querySelectorAll('.dropdown').forEach(d => d.classList.remove('open'));
+    }
+  });
+</script>

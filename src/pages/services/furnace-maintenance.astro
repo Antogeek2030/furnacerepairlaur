@@ -1,0 +1,30 @@
+---
+import Layout from '../../layouts/Layout.astro';
+const phone = '+13015550199';
+const phoneDisplay = '(301) 555-0199';
+---
+<Layout title="Furnace Maintenance Laurel MD | Tune-Ups & Safety Checks" description="Furnace maintenance and seasonal tune-ups in Laurel, MD. Extend equipment life, improve efficiency, catch problems early.">
+  <section class="page-hero">
+    <div class="container">
+      <h1>Furnace Maintenance in Laurel, MD</h1>
+      <p>Seasonal tune-ups extend equipment life, lower energy bills, and prevent mid-winter breakdowns.</p>
+      <p style="margin-top:1.25rem"><a href={`tel:${phone}`} class="btn btn-primary">Schedule a Tune-Up — {phoneDisplay}</a></p>
+    </div>
+  </section>
+  <section class="content-section">
+    <div class="container prose">
+      <h2>Preventive Care That Pays Off</h2>
+      <p>Annual furnace maintenance is the single best way to avoid emergency repairs. We clean, inspect, and test critical components before the heating season.</p>
+      <h3>Included in a Standard Tune-Up</h3>
+      <ul>
+        <li>Filter inspection and recommendation</li>
+        <li>Burner and heat exchanger inspection</li>
+        <li>Ignition system and safety controls</li>
+        <li>Blower motor, belt, and capacitor check</li>
+        <li>Gas pressure and combustion analysis (gas units)</li>
+        <li>Thermostat calibration and system cycle test</li>
+      </ul>
+      <p><a href={`tel:${phone}`} class="btn btn-primary">Book Maintenance</a></p>
+    </div>
+  </section>
+</Layout>

@@ -1,0 +1,30 @@
+---
+import Layout from '../layouts/Layout.astro';
+const phone = '+13015550199';
+const phoneDisplay = '(301) 555-0199';
+---
+<Layout title="About Us | Furnace Repair Laurel MD" description="Local licensed furnace repair team serving Laurel and Prince George's County. Same-day service, upfront pricing, written guarantee.">
+  <section class="page-hero">
+    <div class="container">
+      <h1>About Furnace Repair Laurel MD</h1>
+      <p>Local technicians focused on honest, same-day furnace service for Laurel and surrounding communities.</p>
+    </div>
+  </section>
+  <section class="content-section">
+    <div class="container prose">
+      <h2>Our Commitment</h2>
+      <p>We built this service around what homeowners actually need: fast response, clear pricing, and repairs that last. No high-pressure sales, no unnecessary replacements.</p>
+      <h3>What Sets Us Apart</h3>
+      <ul>
+        <li>Licensed and insured technicians familiar with Maryland HVAC codes</li>
+        <li>Stocked vehicles for first-visit fixes</li>
+        <li>Written estimates before any work begins</li>
+        <li>Workmanship guarantee on every repair</li>
+        <li>24/7 emergency availability</li>
+      </ul>
+      <h3>Service Area</h3>
+      <p>Based at 14305 Cherry Lane Ct #116 in Laurel, we serve Prince George's County and nearby communities including Beltsville, College Park, Greenbelt, Bowie, and Columbia.</p>
+      <p><a href={`tel:${phone}`} class="btn btn-primary">Call {phoneDisplay}</a></p>
+    </div>
+  </section>
+</Layout>

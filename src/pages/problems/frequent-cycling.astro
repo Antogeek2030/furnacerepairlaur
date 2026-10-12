@@ -1,0 +1,28 @@
+---
+import Layout from '../../layouts/Layout.astro';
+const phone = '+13015550199';
+const phoneDisplay = '(301) 555-0199';
+---
+<Layout title="Furnace Short Cycling | Laurel MD Repair" description="Furnace turns on and off too often in Laurel, MD? Fix short cycling to save energy and protect equipment.">
+  <section class="page-hero">
+    <div class="container">
+      <h1>Furnace Frequent Cycling?</h1>
+      <p>Short cycling wastes energy, increases wear, and often points to a fixable problem.</p>
+      <p style="margin-top:1.25rem"><a href={`tel:${phone}`} class="btn btn-primary">Fix Cycling Issues — {phoneDisplay}</a></p>
+    </div>
+  </section>
+  <section class="content-section">
+    <div class="container prose">
+      <h2>Why Furnaces Short Cycle</h2>
+      <ul>
+        <li>Dirty air filter restricting airflow</li>
+        <li>Oversized furnace for the home</li>
+        <li>Faulty limit switch</li>
+        <li>Thermostat problems</li>
+        <li>Blocked return air or closed vents</li>
+      </ul>
+      <p>We diagnose the cause and recommend the simplest effective solution.</p>
+      <p><a href={`tel:${phone}`} class="btn btn-primary">Schedule Diagnosis</a></p>
+    </div>
+  </section>
+</Layout>

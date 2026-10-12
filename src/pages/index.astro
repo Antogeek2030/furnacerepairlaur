@@ -1,0 +1,305 @@
+---
+import Layout from '../layouts/Layout.astro';
+const phone = '+13015550199';
+const phoneDisplay = '(301) 555-0199';
+---
+<Layout>
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <div class="hero-badge">● LAUREL &amp; PRINCE GEORGE'S COUNTY · 24 / 7 EMERGENCY SERVICE</div>
+        <h1>FURNACE<br />REPAIR IN <span>LAUREL</span></h1>
+        <p class="hero-sub">Fast Fixes. Real Relief. Same-Day Service.</p>
+        <p class="hero-desc">When your furnace fails in Laurel, every cold night counts. Our licensed technicians are on call around the clock — delivering expert repairs, upfront pricing, and workmanship backed by a written guarantee for every home in Prince George's County.</p>
+        <div class="hero-tags">
+          <span class="hero-tag">⏱ Same-Day Response</span>
+          <span class="hero-tag">🛡 Licensed &amp; Insured</span>
+          <span class="hero-tag">✓ Upfront Pricing</span>
+          <span class="hero-tag">📞 24 / 7 Emergency</span>
+          <span class="hero-tag">🛡 Workmanship Guarantee</span>
+        </div>
+        <div class="hero-ctas">
+          <a href={`tel:${phone}`} class="btn btn-primary">Schedule an Appointment</a>
+          <a href={`tel:${phone}`} class="btn btn-outline">Get a Quote</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-card">
+          <div class="hero-card-icon">🔥</div>
+          <h3>No Heat?</h3>
+          <p>We diagnose and repair gas, electric, and heat pump systems the same day in most cases.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Us -->
+  <section class="section section-alt" id="why">
+    <div class="container">
+      <div class="section-header">
+        <h2>Why Laurel Homeowners <span>Choose Us</span></h2>
+        <p>Laurel homes rely on reliable heat through Maryland winters. When your furnace struggles, you need a licensed local specialist who responds the same day and repairs it right the first time.</p>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">⚡</div>
+          <h3>Same-Day Diagnosis &amp; Repair</h3>
+          <p>Most same-day furnace repair calls in Laurel are completed within hours of your call — no multi-day waits.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">📜</div>
+          <h3>Licensed &amp; Certified</h3>
+          <p>Every technician is licensed, insured, and trained on gas, electric, and heat pump systems common in Prince George's County.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">💵</div>
+          <h3>Upfront Pricing, Zero Surprises</h3>
+          <p>We quote before we wrench. No hidden fees, no upsell pressure — just honest furnace repair at fair local rates.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">📍</div>
+          <h3>Local to Laurel</h3>
+          <p>Based in Laurel — we know the housing stock, common brands (Carrier, Trane, Lennox, Rheem, Goodman), and Maryland code requirements.</p>
+        </div>
+      </div>
+      <div class="stats-row">
+        <div class="stat-item">
+          <div class="stat-value">47 min</div>
+          <div class="stat-label">Avg. Response</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-value">98%</div>
+          <div class="stat-label">First-Visit Fix Rate</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-value">24/7</div>
+          <div class="stat-label">Emergency Available</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Problems -->
+  <section class="section" id="problems">
+    <div class="container">
+      <div class="section-header">
+        <h2>Recognize These <span>Signs?</span></h2>
+        <p>Maryland winters and system age accelerate furnace wear. If your system shows any of these symptoms, don't wait.</p>
+      </div>
+      <div class="problems-grid">
+        <div class="problem-card urgent">
+          <span class="problem-badge urgent">Urgent</span>
+          <h3>No Heat</h3>
+          <p>Complete loss of heat often means a failed igniter, pilot outage, or thermostat issue. Same-day service restores comfort fast.</p>
+        </div>
+        <div class="problem-card urgent">
+          <span class="problem-badge urgent">Urgent</span>
+          <h3>Strange Noises</h3>
+          <p>Banging, squealing, or rattling can signal loose parts, blower issues, or delayed ignition — address before damage spreads.</p>
+        </div>
+        <div class="problem-card">
+          <span class="problem-badge soon">Address Soon</span>
+          <h3>Uneven Heating</h3>
+          <p>Hot and cold spots point to duct issues, failing blower, or undersized equipment that needs professional diagnosis.</p>
+        </div>
+        <div class="problem-card">
+          <span class="problem-badge soon">Address Soon</span>
+          <h3>Frequent Cycling</h3>
+          <p>Short cycling wastes energy and stresses components. Often caused by dirty filters, oversized units, or limit switch problems.</p>
+        </div>
+        <div class="problem-card urgent">
+          <span class="problem-badge urgent">Urgent</span>
+          <h3>Pilot Light Issues</h3>
+          <p>Pilot that won't stay lit is usually a thermocouple or gas valve — a quick, affordable fix when caught early.</p>
+        </div>
+        <div class="problem-card">
+          <span class="problem-badge soon">Address Soon</span>
+          <h3>Rising Energy Bills</h3>
+          <p>A struggling furnace works harder and costs more. Tune-ups and timely repairs restore efficiency.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="section section-alt" id="services">
+    <div class="container">
+      <div class="section-header">
+        <h2>Expert Furnace <span>Repair Services</span></h2>
+        <p>Every heating problem has a root cause. Our certified technicians diagnose accurately and repair correctly.</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-label">Urgent Response</div>
+          <h3>Emergency Furnace Repair</h3>
+          <p>When heat fails at the worst moment, we respond around the clock — no after-hours surcharge surprises.</p>
+          <ul>
+            <li>Available 24 / 7</li>
+            <li>Avg. response under 60 min</li>
+            <li>Stocked service vehicles</li>
+          </ul>
+          <a href="/services/emergency-furnace-repair/" class="btn btn-outline-dark">Learn More</a>
+        </div>
+        <div class="service-card">
+          <div class="service-label">Most Common</div>
+          <h3>Gas Furnace Repair</h3>
+          <p>Igniters, flame sensors, gas valves, and full diagnostics for all major gas furnace brands.</p>
+          <ul>
+            <li>All major brands</li>
+            <li>Written estimate first</li>
+            <li>Same-visit repairs</li>
+          </ul>
+          <a href="/services/gas-furnace-repair/" class="btn btn-outline-dark">Learn More</a>
+        </div>
+        <div class="service-card">
+          <div class="service-label">Electric Systems</div>
+          <h3>Electric Furnace Repair</h3>
+          <p>Heating elements, sequencers, and control boards for electric furnaces and air handlers.</p>
+          <ul>
+            <li>Element &amp; sequencer service</li>
+            <li>Control diagnostics</li>
+            <li>Same-visit when possible</li>
+          </ul>
+          <a href="/services/electric-furnace-repair/" class="btn btn-outline-dark">Learn More</a>
+        </div>
+        <div class="service-card">
+          <div class="service-label">Preventive</div>
+          <h3>Furnace Maintenance</h3>
+          <p>Seasonal tune-ups extend equipment life, improve efficiency, and catch problems early.</p>
+          <ul>
+            <li>Full system inspection</li>
+            <li>Filter &amp; blower service</li>
+            <li>Safety checks</li>
+          </ul>
+          <a href="/services/furnace-maintenance/" class="btn btn-outline-dark">Learn More</a>
+        </div>
+        <div class="service-card">
+          <div class="service-label">Replacement</div>
+          <h3>Furnace Installation</h3>
+          <p>Code-compliant gas or electric furnace installs with proper sizing and venting for Maryland homes.</p>
+          <ul>
+            <li>Same-day installs often available</li>
+            <li>Permit guidance</li>
+            <li>Workmanship warranty</li>
+          </ul>
+          <a href="/services/furnace-installation/" class="btn btn-outline-dark">Learn More</a>
+        </div>
+        <div class="service-card">
+          <div class="service-label">Modern Systems</div>
+          <h3>Heat Pump Repair</h3>
+          <p>Diagnosis and repair for heat pumps and dual-fuel systems common in the Laurel area.</p>
+          <ul>
+            <li>Brand specialists</li>
+            <li>Refrigerant &amp; electrical</li>
+            <li>Defrost &amp; control issues</li>
+          </ul>
+          <a href="/services/heat-pump-repair/" class="btn btn-outline-dark">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Process -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2>How We Restore Your <span>Heat</span></h2>
+        <p>Every Laurel furnace repair follows a structured, transparent process.</p>
+      </div>
+      <div class="process-steps">
+        <div class="process-step">
+          <h3>Scheduling &amp; Same-Day Response</h3>
+          <p>Call or text. We confirm your appointment quickly — often offering same-day slots.</p>
+        </div>
+        <div class="process-step">
+          <h3>Precision Diagnostic Inspection</h3>
+          <p>We test ignition, sensors, gas pressure, airflow, and safety controls with instruments.</p>
+        </div>
+        <div class="process-step">
+          <h3>Honest Findings &amp; Options</h3>
+          <p>Your technician explains findings in plain language and provides a clear written estimate.</p>
+        </div>
+        <div class="process-step">
+          <h3>Skilled Repair</h3>
+          <p>With your approval, repair begins. Service vehicles carry common parts for first-visit fixes.</p>
+        </div>
+        <div class="process-step">
+          <h3>Performance Verification</h3>
+          <p>We verify heat output, check for leaks, confirm safety, and leave a post-repair summary.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Location -->
+  <section class="section location-section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Find Us in Laurel, MD</h2>
+        <p>Proudly serving Laurel and all of Prince George's County from Cherry Lane Court.</p>
+      </div>
+      <div style="text-align:center;margin-bottom:1rem;">
+        <h3 style="color:var(--white);font-size:1.25rem;">📍 14305 Cherry Lane Ct #116, Laurel, MD 20707</h3>
+        <p style="color:rgba(255,255,255,0.75);margin-top:0.5rem;">Serving Laurel · Beltsville · College Park · Greenbelt · Bowie · Columbia and surrounding communities.</p>
+      </div>
+      <div class="map-embed">
+        <iframe
+          title="Map of 14305 Cherry Lane Ct, Laurel, MD"
+          src="https://www.openstreetmap.org/export/embed.html?bbox=-76.88%2C39.07%2C-76.81%2C39.13&amp;layer=mapnik&amp;marker=39.0993%2C-76.8483"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-banner">
+    <div class="container">
+      <h2>Furnace Down in Laurel?</h2>
+      <p>Don't suffer through cold nights. If your system stopped working, is making unusual sounds, or isn't keeping up — our team can respond today.</p>
+      <a href={`tel:${phone}`} class="btn btn-primary">Call Now — {phoneDisplay}</a>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <h2>Furnace Repair <span>Questions</span></h2>
+        <p>Real answers to what Laurel homeowners ask most.</p>
+      </div>
+      <div class="faq-list">
+        <div class="faq-item">
+          <div class="faq-q">My furnace stopped producing heat — is this an emergency?</div>
+          <div class="faq-a">Yes, especially with kids, elderly residents, or during freezing weather. Most complete failures trace to a failed igniter, pilot outage, thermostat, or limit switch. Emergency calls placed earlier in the day are typically completed same-day.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">How much does furnace repair cost in Laurel?</div>
+          <div class="faq-a">Simple fixes (igniter, flame sensor, thermostat) often range from a few hundred dollars. We provide a written estimate before any work begins. Replacement is recommended when the unit is old and repair exceeds roughly 50% of replacement cost.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">Do you repair both gas and electric furnaces?</div>
+          <div class="faq-a">Yes. We service gas furnaces, electric furnaces, heat pumps, and dual-fuel systems from all major brands including Carrier, Trane, Lennox, Rheem, Goodman, and more.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">Are you licensed and insured in Maryland?</div>
+          <div class="faq-a">Yes. All work is performed by licensed, insured technicians familiar with Maryland plumbing and HVAC codes and local requirements for Laurel and Prince George's County.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">Should I repair or replace my furnace?</div>
+          <div class="faq-a">Repair usually makes sense if the unit is under 15–18 years old and the issue is isolated. Replacement is worth evaluating for units 18+ years old, recurring failures, or when repair cost approaches half the value of a new system. We give an honest assessment either way.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>
+<script>
+  document.querySelectorAll('.faq-q').forEach(q => {
+    q.addEventListener('click', () => {
+      const item = q.closest('.faq-item');
+      item?.classList.toggle('open');
+    });
+  });
+</script>
